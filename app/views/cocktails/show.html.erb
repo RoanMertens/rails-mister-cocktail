@@ -1,0 +1,15 @@
+<h4><%= @cocktail.name %></h4>
+
+<h4>Ingredients:</h2>
+<ul>
+  <% @cocktail.doses.each do |dose| %>
+    <li><%= dose.description %> of <%= dose.ingredient.name %>
+      <%= link_to "Delete", dose_path(dose),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ul>
+
+<p><%= link_to "Back", cocktails_path %></p>
+<p><%= link_to "Add_dose", new_cocktail_dose_path(@cocktail) %></p>
