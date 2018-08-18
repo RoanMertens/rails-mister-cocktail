@@ -3,3 +3,39 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+.center-class{
+  margin-top: 30px;
+  align-items: center;
+}
+
+.row{
+    align-items: center;
+}
+
+h1{
+  padding-left: 20px;
+}
+
+.wrapper{
+  background-color: rgb(177, 213, 219);
+  height: 4000px;
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+}
+
+h2{
+  margin: 0px;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+
+li{
+  padding: 10px;
+
+}

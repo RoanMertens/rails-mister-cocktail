@@ -1,11 +1,16 @@
 class CocktailsController < ApplicationController
-  before_action :set_cocktail, only: [:show]
+  before_action :set_cocktail, only: [:show, :destroy]
 
   def index
     @cocktails = Cocktail.all
   end
 
   def show
+  end
+
+  def destroy
+    @cocktail.destroy
+    redirect_to cocktails_path
   end
 
   def new

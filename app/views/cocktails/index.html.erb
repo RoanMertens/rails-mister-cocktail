@@ -1,10 +1,17 @@
-<h1>Do you want a drink?</h1>
+<div class="wrapper">
+  <div class="container">
+    <h1>Do you want a drink?</h1>
 
-<ol>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-  <% end %>
-</ol>
+    <ol>
+      <% @cocktails.each do |cocktail| %>
+        <li>
+          <%= link_to "", cocktail_path(cocktail),
+          method: :delete, :class=>"fas fa-trash-alt",
+          data: { confirm: "Are you sure?" } %>
+          <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        </li>
+      <% end %>
+    </ol>
+  </div>
+</div>
 
-
-<%= link_to "Make new cocktail", new_cocktail_path %>
