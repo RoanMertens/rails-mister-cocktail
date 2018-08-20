@@ -4,6 +4,11 @@
 // @import "profile";
 // @import "map";
 
+.container{
+  max-width: 60%;
+  background-color: rgb(229, 229, 229);
+}
+
 .center-class{
   margin-top: 30px;
   align-items: center;
@@ -15,11 +20,12 @@
 
 h1{
   padding-left: 20px;
+  text-align: center;
 }
 
 .wrapper{
   background-color: rgb(177, 213, 219);
-  height: 4000px;
+  height: 100%;
   width: 100%;
   left: 0;
   overflow: hidden;
